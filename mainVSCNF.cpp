@@ -18,7 +18,6 @@ using namespace std;
 
 void gera_rede_saida(int ni, int nTests, vector<vector<int>> OTIMIZADOS_LOCAL, char *dir, char *pt){
 
-	//vector<vector<int>> OTIMIZADOS_LOCAL = {{1,1,1},{1,1,1},{1,1,1}};
 
 	ofstream rankedEdges;
   
@@ -36,66 +35,11 @@ void gera_rede_saida(int ni, int nTests, vector<vector<int>> OTIMIZADOS_LOCAL, c
 
   string final = directory + separa + filename + pt + extensao;
 
-
-
-  //string new_string = new_dir + filename;
-
-  //strcat(dir, filename);
-  //string dirandfile = dir + "/" + filename;
 	rankedEdges.open(final);
 	map<int, string> dicionario;
-  //dicionario[0] = "AMH";
-  //dicionario[1] = "CBX2";
-  //dicionario[2] = "CTNNB1";
-  //dicionario[3] = "DHH";
-  //dicionario[4] = "DKK1";
-  //dicionario[5] = "DMRT1";
-  //dicionario[6] = "FGF9";
-  //dicionario[7] = "FOXL2";
-  //dicionario[8] = "GATA4";
-  //dicionario[9] = "NR0B1";
-  //dicionario[10] = "NR5A1";
-  //dicionario[11] = "PGD2";
-  //dicionario[12] = "RSPO1";
-  //dicionario[13] = "SOX9";
-  //dicionario[14] = "SRY";
-  //dicionario[15] = "UGR";
-  //dicionario[16] = "WNT4";
-  //dicionario[17] = "WT1mKTS";
-  //dicionario[18] = "WT1pKTS";
-  //dicionario[19] = "AMH";
-  //dicionario[20] = "CBX2";
-  //dicionario[21] = "CTNNB1";
-  //dicionario[22] = "DHH";
-  //dicionario[23] = "DKK1";
-  //dicionario[24] = "DMRT1";
-  //dicionario[25] = "FGF9";
-  //dicionario[26] = "FOXL2";
-  //dicionario[27] = "GATA4";
-  //dicionario[28] = "NR0B1";
-  //dicionario[29] = "NR5A1";
-  //dicionario[30] = "PGD2";
-  //dicionario[31] = "RSPO1";
-  //dicionario[32] = "SOX9";
-  //dicionario[33] = "SRY";
-  //dicionario[34] = "UGR";
-  //dicionario[35] = "WNT4";
-  //dicionario[36] = "WT1mKTS";
-  //dicionario[37] = "WT1pKTS"; 
 
-  //INICIO mCAD:
-  //dicionario[0] = "Coup";
-  //dicionario[1] = "Emx2";
-  //dicionario[2] = "Fgf8";
-  //dicionario[3] = "Pax6";
-  //dicionario[4] = "Sp8";
-  //dicionario[5] = "Coup";
-  //dicionario[6] = "Emx2";
-  //dicionario[7] = "Fgf8";
-  //dicionario[8] = "Pax6";
-  //dicionario[9] = "Sp8";  
-  //FIM mCAD
 
+  //VSC Genes
   dicionario[0] = "Dbx1";
   dicionario[1] = "Dbx2";
   dicionario[2] = "Irx3";
@@ -114,74 +58,6 @@ void gera_rede_saida(int ni, int nTests, vector<vector<int>> OTIMIZADOS_LOCAL, c
   dicionario[15] = "Pax6";
 
 
-  //dicionario[0] = "Cebpa";
-  //dicionario[1] = "EgrNab";
-  //dicionario[2] = "Eklf";
-  //dicionario[3] = "Fli1";
-  //dicionario[4] = "Fog1";
-  //dicionario[5] = "Gata1";
-  //dicionario[6] = "Gata2";
-  //dicionario[7] = "Gfi1";
-  //dicionario[8] = "Pu1";
-  //dicionario[9] = "Scl";
-  //dicionario[10] = "cJun";
-  //dicionario[11] = "Cebpa";
-  //dicionario[12] = "EgrNab";
-  //dicionario[13] = "Eklf";
-  //dicionario[14] = "Fli1";
-  //dicionario[15] = "Fog1";
-  //dicionario[16] = "Gata1";
-  //dicionario[17] = "Gata2";
-  //dicionario[18] = "Gfi1";
-  //dicionario[19] = "Pu1";
-  //dicionario[20] = "Scl";
-  //dicionario[21] = "cJun";
-
-	//dicionario[0] = "Coup";
-  //dicionario[1] = "Emx2";
-  //dicionario[2] = "Fgf8";
-  //dicionario[3] = "Pax6";
-  //dicionario[4] = "Sp8";
-  //dicionario[5] = "Coup";
-  //dicionario[6] = "Emx2";
-  //dicionario[7] = "Fgf8";
-  //dicionario[8] = "Pax6";
-  //dicionario[9] = "Sp8"; 
-  //dicionario[7] = "FOXL2";
-  //dicionario[8] = "GATA4";
-  //dicionario[9] = "NR0B1";
-  //dicionario[10] = "NR5A1";
-  //dicionario[11] = "PGD2";
-  //dicionario[12] = "RSPO1";
-  //dicionario[13] = "SOX9";
-  //dicionario[14] = "SRY";
-  //dicionario[15] = "UGR";
-  //dicionario[16] = "WNT4";
-  //dicionario[17] = "WT1mKTS";
-  //dicionario[18] = "WT1pKTS";
-  //dicionario[19] = "AMH";
-  //dicionario[20] = "CBX2";
-  //dicionario[21] = "CTNNB1";
-  //dicionario[22] = "DHH";
-  //dicionario[23] = "DKK1";
-  //dicionario[24] = "DMRT1";
-  //dicionario[25] = "FGF9";
-  //dicionario[26] = "FOXL2";
-  //dicionario[27] = "GATA4";
-  //dicionario[28] = "NR0B1";
-  //dicionario[29] = "NR5A1";
-  //dicionario[30] = "PGD2";
-  //dicionario[31] = "RSPO1";
-  //dicionario[32] = "SOX9";
-  //dicionario[33] = "SRY";
-  //dicionario[34] = "UGR";
-  //dicionario[35] = "WNT4";
-  //dicionario[36] = "WT1mKTS";
-  //dicionario[37] = "WT1pKTS";
-
-
-
-
 
 	int metade = ni/2;
 
@@ -191,13 +67,10 @@ void gera_rede_saida(int ni, int nTests, vector<vector<int>> OTIMIZADOS_LOCAL, c
     vector<int> vetor_local = {};
     for(int j = 0; j < ni; j++){
       int mycount = count(OTIMIZADOS_LOCAL[i].begin(), OTIMIZADOS_LOCAL[i].end(), j);
-      //cout << "ESTOU NO J: " << j << endl;
-      //cout << mycount << endl;
       vetor_local.push_back(mycount);
     }
     for(int k = 0; k < vetor_local.size(); k++){
       if(vetor_local[k] != 0){
-        //cout << "VALOR EH " << vetor_local[k] << endl;
         rankedEdges << dicionario[k] << "\t" << dicionario[i] << "\t";
         float conta = (float)vetor_local[k] / (float)nTests;
         if(k >= metade){
@@ -224,7 +97,6 @@ void printFirstSolution(Individual * p, string Letra, string test, char *dir, ch
     arquivo_factivel << "Test Number: " << test << endl;
     for(int outputs = 0; outputs < p->no; outputs++){
     	arquivo_factivel << "Output " << outputs << endl;
-    	//cout << "Output " << outputs << endl;
     	sort(p->phenotype[outputs].begin(), p->phenotype[outputs].end());
     	vector<int> phenotype_local = {};
 
@@ -242,13 +114,10 @@ void printFirstSolution(Individual * p, string Letra, string test, char *dir, ch
     	for(int actives = 0; actives < phenotype_local.size(); actives++){
         	int currentActive = phenotype_local[actives];
         	vector<int> gene = p->genotype[currentActive];
-        	//cout << "NODE: " << currentActive << " - ";
         	arquivo_factivel << "NODE: " << currentActive << " - ";
         	for(int i = 0; i < gene.size(); i++){
-          		//cout << gene[i] << "  ";
           		arquivo_factivel << gene[i] << "  ";
         	}
-        	//cout << "\n";
         	arquivo_factivel << "\n";
     	}
     }
@@ -272,7 +141,6 @@ void printFinalSolution(vector<vector<int>> genotype, string Letra, string test,
   	arquivo_final.open(filename);
   	for(int outputs = 0; outputs < local->no; outputs++){
     	arquivo_final << "Output " << outputs << endl;
-      	//cout << "Output " << outputs << endl;
       	sort(local->phenotype[outputs].begin(), local->phenotype[outputs].end());
       
     	vector<int> phenotype_local = {};
@@ -290,18 +158,14 @@ void printFinalSolution(vector<vector<int>> genotype, string Letra, string test,
       	for(int actives = 0; actives < phenotype_local.size(); actives++){
         	int currentActive = phenotype_local[actives];
           	vector<int> gene = local->genotype[currentActive];
-          	//cout << "NODE: " << currentActive << " - ";
           	arquivo_final << "NODE: " << currentActive << " - ";
           	for(int i = 0; i < gene.size(); i++){
-              	//cout << gene[i] << "  ";
               	arquivo_final << gene[i] << "  ";
           	}
-      		//cout << "\n";
       		arquivo_final << "\n";
       	}
   	}
   	local->countLE3();
-  	//cout << local->LE << endl;
   	arquivo_final.close();
 }
 
@@ -321,12 +185,9 @@ void printNonFeasibleSolution(vector<vector<int>> genotype, string Letra, string
     ofstream arquivo_final;
     string filename = directory + "/" + Letra + "_" + test + "_" + pt + "_nonFeasible.txt";
 
-  	//ofstream arquivo_final;
-  	//string filename = Letra + "_" + test + "_nonFeasible.txt";
   	arquivo_final.open(filename);
   	for(int outputs = 0; outputs < local->no; outputs++){
     	arquivo_final << "Output " << outputs << endl;
-      	//cout << "Output " << outputs << endl;
       	sort(local->phenotype[outputs].begin(), local->phenotype[outputs].end());
       
     	vector<int> phenotype_local = {};
@@ -344,13 +205,10 @@ void printNonFeasibleSolution(vector<vector<int>> genotype, string Letra, string
       	for(int actives = 0; actives < phenotype_local.size(); actives++){
         	int currentActive = phenotype_local[actives];
           	vector<int> gene = local->genotype[currentActive];
-          	//cout << "NODE: " << currentActive << " - ";
           	arquivo_final << "NODE: " << currentActive << " - ";
           	for(int i = 0; i < gene.size(); i++){
-              	//cout << gene[i] << "  ";
               	arquivo_final << gene[i] << "  ";
           	}
-      		//cout << "\n";
       		arquivo_final << "\n";
       	}
   	}
@@ -360,9 +218,6 @@ void printNonFeasibleSolution(vector<vector<int>> genotype, string Letra, string
 
 int main(int argc, char *argv[ ])
 { 
-      //char discretizationMethod[50] = "TSD";
-      //char problemConfig[50] = "0_1";
-      //char pseudotime[5] = "pt0";
 
 
       char discretizationMethod[50];
@@ -387,15 +242,12 @@ int main(int argc, char *argv[ ])
       char DM[50];
       strcpy(DM, discretizationMethod);
 
-      //cout << DM << endl;
 
 
       strcat(DM, separa);
       strcat(DM, problemConfig);
 
 
-      //cout << "Discretization: " << discretizationMethod << endl;
-      //cout << "DM: " << DM << endl;
 
       mkdir(discretizationMethod, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
       mkdir(DM, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
@@ -406,7 +258,6 @@ int main(int argc, char *argv[ ])
    ifstream MyReadFile(tabelaverdade);
    int linha = 0;
    while (getline (MyReadFile, myText)) {
-  // Output the text from the file
       dAllOutputs.push_back({});
       for(int i = 0; i < myText.size(); i++){
          int valor_atual = myText[i];
@@ -461,7 +312,6 @@ int main(int argc, char *argv[ ])
    alfabeto[24] = "Y";
    alfabeto[25] = "Z";                        
 
-   //gera_rede_saida(6, 3);
    vector<vector<int>> OTIMIZADOS = {};
 
    for(int saida = 0; saida < dAllOutputs.size(); saida++){
@@ -597,13 +447,13 @@ int main(int argc, char *argv[ ])
     			}    
 
     			if(evaluations % 1000 == 0){
-      				//cout << "Evaluations: " << evaluations << " Fitness: " << k->currentFitness << endl;
-      				//cout << "Logic Elements " << k->currentLE << endl;
+      				cout << "Evaluations: " << evaluations << " Fitness: " << k->currentFitness << endl;
+      				cout << "Logic Elements " << k->currentLE << endl;
             int tg = 0;
     			}
 
     		} // Fim Processo Geracional WHILE
-    		//cout << "End of Test Number " << test << "/" << intparam["nTests"]-1 << " for variable " << alfabeto[saida] <<endl;
+    		cout << "End of Test Number " << test << "/" << intparam["nTests"]-1 << " for variable " << alfabeto[saida] <<endl;
     		string nome2;
         	if (test == 0){
           		nome2 = "0";
@@ -654,12 +504,7 @@ int main(int argc, char *argv[ ])
       				}
   				}
 
-          //for(int tg = 0; tg < OTIMIZADOS.size(); tg++){
-          //  for(int tg1 = 0; tg1 < OTIMIZADOS[tg].size(); tg1++){
-          //    cout << OTIMIZADOS[tg][tg1];
-           // }
-          //  cout << "\n\n";
-          //}
+
     		}
     		else{
     			printNonFeasibleSolution(k->best, alfabeto[saida], nome2, intparam["ni"], intparam["no"], intparam["nc"], intparam["nr"], intparam["lb"], DM, pseudotime);
@@ -667,7 +512,6 @@ int main(int argc, char *argv[ ])
     		k->setStandard();
 		} // Fim nTests
 } //Fim nSaidas
-//cout << "TAMANHO" << OTIMIZADOS.size() << endl;
 gera_rede_saida(intparam["ni"], intparam["nTests"], OTIMIZADOS, DM, pseudotime);
 return 0;
 } // Fim main
