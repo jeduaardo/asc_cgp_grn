@@ -1,1 +1,1 @@
-# bioinfo2021_cgp-grn
+# interface_cgp_grn
