@@ -1,1 +1,1 @@
-# interface_cgp_grn
+# is_cgp_grn
